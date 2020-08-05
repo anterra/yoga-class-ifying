@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yoga Sequencing Application</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="static/css/stylesheet.css" />
+  </head>
+
+  <body class="mb4">
+    <h1 class="tc f1 lh-copy">Build a Yoga Class</h1>
+    <h2 class="tc f2 lh-copy">Select Your Yoga Poses:</h2>
+
+    <form method="POST" action="/predict">
+      {% for p in all_poses %}
+      <div class="mb4">
+        <h1 class="ph3 mb1">{{ p }}</h1>
+        <div class="flex w-100 ph3">
+          {% for key, value in all_poses[p].items() %}
+          <div class="w-30 pr3">
+            <label class="db f5 lh-copy" for="{{ p }}-{{ key }}">
+              {{ key }}
+            </label>
+
+            <select class="w-100" name="{{ p }}-{{ key }}" id="{{ p }}-{{ key }}">
+              <option value=""></option>
+              {% for pose in value %}
+              <option value="{{ pose | replace(" ", "-") }}">
+                {{ pose }}
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+
+      <input type="submit" value="What's my class?" method="get" />
+    </form>
+  </body>
+</html>
