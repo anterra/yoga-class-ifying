@@ -82,6 +82,7 @@ Sequentially:
 - Logistic Regression
 - Decision Tree
 - Random Forest
+- Bernoulli Naive Bayes
 - XGBoost
 
 **Other**
