@@ -54,7 +54,7 @@ Sequentially:
 - [Pipeline Modules](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/pipeline_modules.py)
 - [Classification Modeling](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/classification_modeling.ipynb)
 - [Flask App](https://github.com/anterra/yoga-class-ifying/tree/master/flask_app)
-- [Presentation Slide]()
+- [Presentation Slides](https://github.com/anterra/yoga-class-ifying/blob/master/presentation/Yoga%20Classification.pdf)
 
 ## Project Team
 
