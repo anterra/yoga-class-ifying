@@ -24,7 +24,10 @@ The end goal of this project is to create a web-based yoga sequencing applicatio
 4. ) Summed up dummy variable counts of each category for all poses in each class, to get total counts of number of poses of each type in each class.
 5. ) For each yoga class, I divided counts by length of the class to normalize the data. In this way, dataset was comprised of rows of classes, with each value as a ratio of the total class spent in each type of pose. (Note, these did not add up to 1 of course, since a single pose can have many diagnostics applied.)
 6. ) Accomodated for class imbalance using RandomOverSampler.
-7. )
+7. ) Tested 6 different classification models.
+8. ) Optimized, evaluated, and selected the best model -- Logistic Regression.
+9. ) Discovered feature importance.
+10. ) Built a flask app for yoga teachers to build their own yoga classes, and have them classified by percentage likelihood of falling into each genre!
 
 ## Findings and Conclusions
 
@@ -46,10 +49,11 @@ I essentially used Data Science to find aggregate decisions across thousands of 
 
 Sequentially:
 
-- [Data Collection]()
-- [EDA and Feature Engineering]()
-- [Classification Modeling]()
-- [Flask App]()
+- [Data Collection](https://github.com/anterra/yoga-class-ifying/tree/master/data_collection)
+- [EDA and Feature Engineering](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/eda_feature_engineering.ipynb)
+- [Pipeline Modules](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/pipeline_modules.py)
+- [Classification Modeling](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/classification_modeling.ipynb)
+- [Flask App](https://github.com/anterra/yoga-class-ifying/tree/master/flask_app)
 - [Presentation Slide]()
 
 ## Project Team
@@ -61,11 +65,14 @@ Sequentially:
 - Jupyter Notebook
 - Python
 - Scikit-learn
+- Flask
+- HTML/CSS
 - Selenium
 - Beautiful Soup
 - Pandas
 - Matplotlib
 - Seaborn
+- YellowBrickRoad
 
 ## Approaches and Skills
 
