@@ -27,7 +27,7 @@ The end goal of this project is to create a web-based yoga sequencing applicatio
 7. ) Tested 6 different classification models.
 8. ) Optimized, evaluated, and selected the best model -- Logistic Regression.
 9. ) Discovered feature importance.
-10. ) Built a flask app for yoga teachers to build their own yoga classes, and have them classified by percentage likelihood of falling into each genre! Check it out [here:](https://yoga-class-ification.herokuapp.com/)
+10. ) Built a [flask app](https://yoga-class-ification.herokuapp.com/) for yoga teachers to build their own yoga classes, and have them classified by percentage likelihood of falling into each genre!
 
 ## Findings and Conclusions
 
